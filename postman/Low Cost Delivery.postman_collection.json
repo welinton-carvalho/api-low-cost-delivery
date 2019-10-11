@@ -1,0 +1,401 @@
+{
+	"info": {
+		"_postman_id": "c37ef563-7dc3-515b-bf4b-a443023380a3",
+		"name": "Low Cost Delivery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Node",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"id\" : 0,\n\t\"name\" : \"Z\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/node",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"node"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/nodes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"nodes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/node/name/A",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"node",
+								"name",
+								"A"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteByName",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:8080/node/delete/A",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"node",
+								"delete",
+								"A"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/node/id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"node",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:8080/node/delete/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"node",
+								"delete",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "InitialData",
+			"item": [
+				{
+					"name": "loadInitialData",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/initial/data/load",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"initial",
+								"data",
+								"load"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clearInitialData",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:8080/initial/data/clear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"initial",
+								"data",
+								"clear"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4e1c55e3-6ccf-4ea6-a647-3f16bd83a140",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "72a6bb2a-01c1-4162-ad32-13fb5e49a3d0",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Edge",
+			"item": [
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"Node_0_1\",\r\n  \"name\": \"Path on Node_0 to Node_1\",\r\n  \"distance\": 10,\r\n  \"source\": {\r\n    \"id\": 1,\r\n    \"name\": \"Node_0\"\r\n  },\r\n  \"destination\": {\r\n    \"id\": 2,\r\n    \"name\": \"Node_1\"\r\n  }\r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/edge",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"edge"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/edges",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"edges"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:8080/edge/delete/Node_0_1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"edge",
+								"delete",
+								"Node_0_1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "localhost:8080/edge/id/Node_0_1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"edge",
+								"id",
+								"Node_0_1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAll",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "localhost:8080/edge/delete/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"edge",
+								"delete",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DeliveryCalculator",
+			"item": [
+				{
+					"name": "calculateRoute",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"origem\" :\"A\",\n\t\"destino\" : \"D\",\n\t\"autonomia\": \"10\",\n\t\"valorDoLitro\": \"2.50\"\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/delivery/calculateRoute/",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"delivery",
+								"calculateRoute",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f31ab7f5-4ec7-4d2e-9110-14c9bc4040e0",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d6c354c5-89b6-4478-9dff-6ef299d4c517",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		}
+	]
+}
