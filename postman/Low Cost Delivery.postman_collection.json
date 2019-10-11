@@ -23,11 +23,11 @@
 							"raw": "{\n\t\"id\" : 0,\n\t\"name\" : \"Z\"\n}"
 						},
 						"url": {
-							"raw": "localhost:8080/node",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/node",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"node"
 							]
@@ -45,11 +45,11 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/nodes",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/nodes",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"nodes"
 							]
@@ -67,11 +67,11 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/node/name/A",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/node/name/A",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"node",
 								"name",
@@ -88,11 +88,11 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "localhost:8080/node/delete/A",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/node/delete/A",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"node",
 								"delete",
@@ -112,11 +112,11 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/node/id/1",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/node/id/1",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"node",
 								"id",
@@ -133,11 +133,11 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "localhost:8080/node/delete/all",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/node/delete/all",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"node",
 								"delete",
@@ -162,11 +162,11 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/initial/data/load",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/initial/data/load",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"initial",
 								"data",
@@ -183,11 +183,11 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "localhost:8080/initial/data/clear",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/initial/data/clear",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"initial",
 								"data",
@@ -239,11 +239,11 @@
 							"raw": "{\r\n  \"id\": \"Node_0_1\",\r\n  \"name\": \"Path on Node_0 to Node_1\",\r\n  \"distance\": 10,\r\n  \"source\": {\r\n    \"id\": 1,\r\n    \"name\": \"Node_0\"\r\n  },\r\n  \"destination\": {\r\n    \"id\": 2,\r\n    \"name\": \"Node_1\"\r\n  }\r\n}"
 						},
 						"url": {
-							"raw": "localhost:8080/edge",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/edge",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"edge"
 							]
@@ -261,11 +261,11 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/edges",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/edges",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"edges"
 							]
@@ -280,11 +280,11 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "localhost:8080/edge/delete/Node_0_1",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/edge/delete/Node_0_1",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"edge",
 								"delete",
@@ -304,11 +304,11 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "localhost:8080/edge/id/Node_0_1",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/edge/id/Node_0_1",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"edge",
 								"id",
@@ -325,11 +325,11 @@
 						"header": [],
 						"body": {},
 						"url": {
-							"raw": "localhost:8080/edge/delete/all",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/edge/delete/all",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"edge",
 								"delete",
@@ -359,11 +359,11 @@
 							"raw": "{\n\t\"origem\" :\"A\",\n\t\"destino\" : \"D\",\n\t\"autonomia\": \"10\",\n\t\"valorDoLitro\": \"2.50\"\n}"
 						},
 						"url": {
-							"raw": "localhost:8080/delivery/calculateRoute/",
+							"raw": "https://api-low-cost-delivery.herokuapp.com/delivery/calculateRoute/",
 							"host": [
-								"localhost"
+								"https://api-low-cost-delivery.herokuapp.com"
 							],
-							"port": "8080",
+							
 							"path": [
 								"delivery",
 								"calculateRoute",
