@@ -13,6 +13,6 @@ public class HomeController {
     @GetMapping(value = "/", produces = MediaType.TEXT_HTML_VALUE)
     public ResponseEntity home() {
         return ResponseEntity.ok(STATIC_HOME_CONTENT);
-    } 
+    }
 
 }
